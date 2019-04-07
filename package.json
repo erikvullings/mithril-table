@@ -1,0 +1,32 @@
+{
+  "name": "mithril-table",
+  "version": "0.0.1",
+  "description": "An editable table component for Mithril.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "lerna run link",
+    "link": "lerna run link",
+    "build:domain": "lerna run build:domain",
+    "start": "lerna run start --parallel",
+    "patch-release": "lerna run patch-release --parallel",
+    "minor-release": "lerna run minor-release --parallel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikvullings/mithril-table.git"
+  },
+  "keywords": [
+    "mithril",
+    "table"
+  ],
+  "author": "Erik Vullings <erik.vullings@gmail.com> (http://www.tno.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erikvullings/mithril-table/issues"
+  },
+  "homepage": "https://github.com/erikvullings/mithril-table#readme",
+  "devDependencies": {
+    "lerna": "^3.4.3"
+  }
+}
