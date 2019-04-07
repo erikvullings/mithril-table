@@ -2,23 +2,31 @@ import { CodeBlock } from 'mithril-materialized';
 import { EditableTable, IEditableTable } from 'mithril-table';
 import m from 'mithril';
 
-interface IPerson { id: number; first: string; last: string; }
+interface IPerson {
+  id: number;
+  first: string;
+  last: string;
+}
 
 export const InputPage = () => {
   const state = {
-    data: [{
-      id: 1,
-      first: 'John',
-      last: 'Doe',
-    }, {
-      id: 2,
-      first: 'Jane',
-      last: 'Doe',
-    }, {
-      id: 3,
-      first: 'Bob',
-      last: 'Bear',
-    }] as IPerson[],
+    data: [
+      {
+        id: 1,
+        first: 'John',
+        last: 'Doe',
+      },
+      {
+        id: 2,
+        first: 'Jane',
+        last: 'Doe',
+      },
+      {
+        id: 3,
+        first: 'Bob',
+        last: 'Bear',
+      },
+    ] as IPerson[],
   };
 
   return {
@@ -38,7 +46,7 @@ export const InputPage = () => {
           moveRows: true,
           // disabled: true,
           // sortRows: false,
-          onchange: (data) => {
+          onchange: data => {
             state.data = data;
             console.table(data);
           },

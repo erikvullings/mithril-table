@@ -26,6 +26,15 @@ export interface IEditableTable<T extends { [key: string]: unknown }> extends At
   onchange?: (data: T[]) => void;
 }
 
+/**
+ * EditableTable, a Mithril component for generating an editable table.
+ *
+ * Features:
+ * - Specify the headers
+ * - Specify the column order (using the header order)
+ * - Disable the table, making it an ordinary table
+ * - Adding, deleting, moving and sorting rows
+ */
 export const EditableTable = <T>(): Component<IEditableTable<T>> => {
   const state = {
     sortDirectionUp: true,

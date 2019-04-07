@@ -78,4 +78,4 @@ var t,e=arguments[3],i=function t(e,i,n){null===e&&(e=Function.prototype);var s=
 },{"mithril":"lxlU","../components/layout":"DqVK","../components/about/about-page":"JJjL","../components/inputs/input-page":"YxUM","../components/home/home-page":"+Au3"}],"+YSF":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),require("materialize-css/dist/css/materialize.min.css"),require("material-icons/iconfont/material-icons.css");var r=e(require("mithril")),i=require("./services/dashboard-service");r.default.route(document.body,i.dashboardSvc.defaultRoute,i.dashboardSvc.routingTable);
 },{"materialize-css/dist/css/materialize.min.css":"oaoG","material-icons/iconfont/material-icons.css":"mkQZ","mithril":"lxlU","./services/dashboard-service":"1u5V"}]},{},["+YSF"], null)
-//# sourceMappingURL=https://erikvullings.github.io/mithril-table/app.54ccb495.js.map
+//# sourceMappingURL=https://erikvullings.github.io/mithril-table/app.24ab32a4.js.map

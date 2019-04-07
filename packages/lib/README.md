@@ -1,6 +1,13 @@
 # mithril-table
 
-An editable table component for Mithril.
+A Mithril component for generating an editable table.
+
+Features:
+
+- Specify the header names
+- Specify the column order (using the header order)
+- Disable the table, making it an ordinary table
+- Adding, deleting, moving and sorting rows
 
 ## Installation
 
@@ -38,6 +45,7 @@ import m from 'mithril';
   };
 
   m(EditableTable, {
+    // Optional, to specify the order of the columns and their header
     headers: [
       { column: 'id', title: 'ID' },
       { column: 'first', title: 'First name' },
