@@ -4,6 +4,7 @@ import { ContentEditable } from 'mithril-contenteditable';
 // TODO Optional functionality
 // - Add pagination
 // - Infer type and/or cast type
+// - Offer type support, e.g. when the type is an enum
 // - create property for new row factory function
 // - Add a search option, see also https://codepen.io/dp_lewis/pen/MwPRYW
 
