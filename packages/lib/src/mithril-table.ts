@@ -8,7 +8,7 @@ import { ContentEditable } from 'mithril-contenteditable';
 // - create property for new row factory function
 // - Add a search option, see also https://codepen.io/dp_lewis/pen/MwPRYW
 
-export interface IEditableTable<T extends { [key: string]: unknown }> extends Attributes {
+export interface IEditableTable<T extends { [key: string]: any }> extends Attributes {
   /** Table headers, also determines column order. */
   headers?: Array<{ column: Extract<keyof T, string>; title: string }>;
   /** Table data */
