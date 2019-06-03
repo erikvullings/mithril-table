@@ -36,11 +36,11 @@ export interface IEditableTable<T extends { [key: string]: any }> extends Attrib
  * - Disable the table, making it an ordinary table
  * - Adding, deleting, moving and sorting rows
  */
-export const EditableTable = <T>(): Component<IEditableTable<T>> => {
+export const EditableTable = <T extends { [key: string]: any }>(): Component<IEditableTable<T>> => {
   const state = {
     sortDirectionUp: true,
   } as {
-    headers: Array<{ column: Extract<keyof T, string>; title: string }>;
+    headers: Array<{ column: string; title: string }>;
     data: T[];
     onchange?: (data: T[]) => void;
     sortColumn?: string;
